@@ -367,3 +367,13 @@ if prompt :
             st.markdown(response)
         # Add assistant response to chat history
         st.session_state.messages.append({"role": "assistant", "content": response})
+
+
+footer_html = """
+<div style='text-align: center; margin-top: -10px;'> 
+    <p style='font-size: 12px;'>
+        👋 This is a demo app using amazing open-source LLMs from Hugging Face 🤗.
+    </p>
+</div>
+"""
+st.markdown(footer_html, unsafe_allow_html=True)
